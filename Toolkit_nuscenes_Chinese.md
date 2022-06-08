@@ -2,7 +2,7 @@
 
 我们基于mmdetection3d提供了noisy data的toolkit
 
-nuScenes 数据集的准备可以参照https://github.com/open-mmlab/mmdetection3d/blob/master/docs/zh_cn/datasets/nuscenes_det.md
+nuScenes 数据集的准备可以参照 [nuScenes Dataset](https://github.com/open-mmlab/mmdetection3d/blob/master/docs/zh_cn/datasets/nuscenes_det.md)
 
 ### 生成noise pkl:
 

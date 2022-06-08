@@ -1,46 +1,47 @@
 ### Toolkit-Waymo
 
-我们基于mmdetection3d提供了noisy data的toolkit
+We provide the toolkit of generating noisy validation pkl based MMDetection3D.
 
-Waymo 数据集的准备可以参照https://github.com/open-mmlab/mmdetection3d/blob/master/docs/zh_cn/datasets/waymo_det.md
+Please following MMDetection3D to download and organize the  [Waymo Dataset](https://github.com/open-mmlab/mmdetection3d/blob/master/docs/zh_cn/datasets/waymo_det.md).
 
-### 生成noise pkl:
+### Noise validation pkl generation:
 
-Note：也可以直接使用我们提供的pkl
+Note：You can generate noisy validation pkl files following the instructions or download it from [[GitHub Release](https://github.com/anonymous-benchmark/lidar-camera-robust-benchmark/releases/tag/publish)].
 
 ```python
 python tools/create_noise_data_waymo.py waymo --root-path  data/waymo --out-dir data/waymo --workers 128 --extra-tag waymo
 ```
 
-##### 生成的pkl格式：
+##### the format of pkl files：
 
 ```python
 dict(
-	'lidar': dict(...) # 保存lidar的noise信息， 以id检索，例如 1000000
-  'camera': dict(...) # 保存camera的noise信息， 以id_cameraid检索， 例如 1000000_1
+	'lidar': dict(...)  # noisy infos of lidar, retrieved by id, e.g.1000000
+  'camera': dict(...) # noisy infos of camera, retrieved by id_cameraid, e.g.1000000_1
 )
 ```
 
-对于‘lidar’部分，格式为
+For 'lidar'，the format is:
 
 ```python
 dict(
 	xxxx: dict(...),
   xxxx: dict(...)
 )
-# 上述的dict的内容有:
+# the content of above dict(...):
 dict(
-    # 基本信息
-	'prev': 'training/velodyne/xxxx.bin' or '' # 表示为上一帧的lidar文件名字，无上一帧则为空''
-    # noise信息
+   # basic information
+	'prev': 'training/velodyne/xxxx.bin' or '' # LiDAR file name of the previous frame. If no previous frame, then the file name is ''.
+   # Noisy information
   'noise': dict(
-    	'drop_frames': dict(   # 丢帧信息，key为比例，如10,20,...,90
-        	'10': dict('discrete': dict('stuck': True or False #是否卡帧, 'replace': 'training/velodyne/xxxx.bin' #替代点云(可为空)
-                    'consecutive': dict('stuck': True or False, 'replace': 'training/velodyne/xxxx.bin' # 同上
+    	'drop_frames': dict(  # The information of LiDAR-stuck. The key is the percentage, including 10, 20, ..., 90.
+        	'10': dict('discrete': dict('stuck': True or False # if stuck? 
+                                      'replace': 'training/velodyne/xxxx.bin' #the replaced LiDAR file 
+                    'consecutive': dict('stuck': True or False, 'replace': 'training/velodyne/xxxx.bin' # same as the above
                   )
-            '20': # 同上
+            '20': # same as the above
             ...
-            '90': # 同上
+            '90': # same as the above
         ),
       'object_failure': True/False     
     )
@@ -49,36 +50,37 @@ dict(
 
 
 
-对于camera部分，与lidar部分类似，格式为
+For 'camera'，the format is similar to 'lidar' part:
 
 ```python
 dict(
 	'xxxx_y': dict(...),
   'xxxx_y': dict(...)
 )
-# 上述的dict的内容有:
+# the content of above dict(...):
 dict(
-    # 基本信息
-    'type': '0' or '1' or ... # 表示哪个方向的相机 0-5
-		'prev': 'training/image_y/xxxx.png' or '' # 表示为上一帧的camera文件名字，无上一帧则为空''
-    'lidar': dict('file_name': 'training/velodyne/xxxx.bin') # 表示为camera对应的lidar名字
-    # noise信息
+    # basic information
+    'type': '0' or '1' or ... # the camera type
+		'prev': 'training/image_y/xxxx.png' or '' # Camera file name of the previous frame. If no previous frame, then the file name is ''.
+    'lidar': dict('file_name': 'training/velodyne/xxxx.bin') # corresponding LiDAR name
+    # Noisy information
     'noise': dict(
-    	'drop_frames': dict(   # 丢帧信息，key为比例，如10,20,...,90
-        	'10': dict('discrete': dict('stuck': True or False #是否卡帧, 'replace': 'training/image_y/xxxx.png' #替代图片(可为空)
-                     'consecutive': dict('stuck': True or False, 'replace': 'training/image_y/xxxx.png' # 同上
+    	'drop_frames': dict(   # The information of camera-stuck. The key is the percentage, including 10, 20, ..., 90.
+        	'10': dict('discrete': dict('stuck': True or False # if stuck? 
+                                      'replace': 'training/image_y/xxxx.png' # the replaced camera file 
+                     'consecutive': dict('stuck': True or False, 'replace': 'training/image_y/xxxx.png' # same as the above
                   )
-            '20': # 同上
+            '20': # same as the above
             ...
-            '90': # 同上
+            '90': # same as the above
         )
        'extrinsics_noise': dict(
-            			'Tr_velo_to_cam':xxx, # 表示noise之前的矩阵
-            			'all_Tr_velo_to_cam_noise':xxx, # 表示所有相机一起扰动后的矩阵
-            			'single_Tr_velo_to_cam_noise':xxx, # 表示相机单独扰动后的矩阵
+            			'Tr_velo_to_cam':xxx, # original translation matrix
+            			'all_Tr_velo_to_cam_noise':xxx, # the noisy translation matrix. 'all' means the noisy is the same for all cameras 
+            			'single_Tr_velo_to_cam_noise':xxx,  # the noisy translation matrix. 'single' means the noisy is independent for all cameras 
              )
        'mask_noise': dict(
-            'mask_id': xxx, # 表示第几张mask图片
+            'mask_id': xxx, # the mask image ID
         )
     )
 )
@@ -88,7 +90,7 @@ dict(
 
 ### WaymoNoiseDataset
 
-使用方式：将datasets/waymo_dataset.py中WaymoDataset的初始化函数和get_data_info替换为下面的代码，之后在config里面新增一些参数即可
+Usage：replace the init and get_data_info function of  WaymoDatasetin  datasets/waymo_dataset.py with the following code.
 
 ```python
 @DATASETS.register_module()
@@ -135,13 +137,13 @@ class WaymoNoiseDataset(KittiDataset):
             self.flag = self.flag[::load_interval]
 
         # ADD
-        self.extrinsics_noise = extrinsics_noise  # 外参是否扰动
+        self.extrinsics_noise = extrinsics_noise  # if use noisy calib
         assert extrinsics_noise_type in ['all', 'single']
-        self.extrinsics_noise_type = extrinsics_noise_type  # 外参扰动类型
-        self.drop_frames = drop_frames  # 是否丢帧
-        self.drop_ratio = drop_set[0]  # 丢帧比例：assert ratio in [10, 20, ..., 90]
-        self.drop_type = drop_set[1]  # 丢帧情况：连续(consecutive) or 离散(discrete)
-        self.noise_sensor_type = noise_sensor_type  # lidar or camera 丢帧
+        self.extrinsics_noise_type = extrinsics_noise_type  # single or all
+        self.drop_frames = drop_frames  # if use lidar-stuck or camera-stuck
+        self.drop_ratio = drop_set[0]  # the percentage：assert ratio in [10, 20, ..., 90]
+        self.drop_type = drop_set[1]  # consecutive or discrete
+        self.noise_sensor_type = noise_sensor_type  # lidar or camera 
         noise_data = mmcv.load(noise_waymo_ann_file, file_format='pkl')
         self.noise_camera_data = noise_data['camera']
         if self.extrinsics_noise or self.drop_frames:
@@ -153,7 +155,7 @@ class WaymoNoiseDataset(KittiDataset):
             print('frame drop setting: drop ratio:', self.drop_ratio, ', sensor type:', self.noise_sensor_type,
                   ', drop type:', self.drop_type)
         if self.extrinsics_noise:
-            assert noise_sensor_type == 'camera'  ## 只需要相机变化
+            assert noise_sensor_type == 'camera'  
             print(f'add {extrinsics_noise_type} noise to extrinsics')
 
 
@@ -225,7 +227,7 @@ class WaymoNoiseDataset(KittiDataset):
 
 ### Limited LiDAR FOV
 
-直接将mmdet3d/datasets/pipelines/loading.py的LoadPointsFromFile替换为下面的代码，在config里面对应LoadPointsFromFile的地方传入新增参数point_cloud_angle_range=[-90, 90] or [-60,60]，分别表示只保留前视180和120度
+Usage：replace LoadPointsFromMultiSweeps in datasets/pipelines/loading.py with the following code. Then, you should add parameters point_cloud_angle_range=[-90, 90] or [-60,60] in config files.
 
 ```python
 @PIPELINES.register_module()
@@ -422,7 +424,7 @@ class LoadPointsFromFile(object):
 
 ### Missing of Camera Inputs
 
-直接将mmdet3d/datasets/pipelines/loading.py的LoadMultiViewImageFromFiles替换为下面的代码，在config里面对应LoadMultiViewImageFromFiles的地方传入新增参数drop_camera=[]，list里面就是需要drop的camera
+Usage：replace LoadMultiViewImageFromFiles in datasets/pipelines/loading.py with the following code. Then, you should add parameters drop_camera=[] in config files, like drop_camera=[0]. The names in [] indicate the types of missing cameras. 
 
 ```python
 @PIPELINES.register_module()
@@ -490,7 +492,7 @@ class LoadMultiViewImageFromFiles(object):
 
 ### Occlusion of Camera Lens 
 
-下载mask图片
+please download the mask images from [[GitHub Release](https://github.com/anonymous-benchmark/lidar-camera-robust-benchmark/releases/tag/publish)] first.
 
 ```python
 @PIPELINES.register_module()
@@ -570,9 +572,7 @@ class LoadMaskMultiViewImageFromFiles(object):
 
 ### LiDAR Object Failure
 
-在datasets/pipelines/transforms_3d.py中，增加函数Randomdropforeground(记得在datasets/pipelines/init.py中增加对应的引用)
-
-之后在config的test_pipeline的transforms里面，增加Randomdropforeground即可，注意得同时添加dict(type='LoadAnnotations3D', with_bbox_3d=True, with_label_3d=True)
+Usage：add a new class Randomdropforeground in datasets/pipelines/transforms_3d.py (do not forget to add import in datasets/pipelines/init.py). Then, in the config files, you should add Randomdropforeground in the transforms of test_pipeline. Besides, you also need to add dict(type='LoadAnnotations3D', with_bbox_3d=True, with_label_3d=True).
 
 ```python
 @PIPELINES.register_module()
