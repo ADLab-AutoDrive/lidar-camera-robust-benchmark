@@ -1,0 +1,1292 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>LiDAR-Camera Robust Benchmark</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="https://img.alicdn.com/tfs/TB1f0qzXSzqK1RjSZFLXXcn2XXa-13-16.svg" rel="icon">
+    <link href="https://img.alicdn.com/tfs/TB1f0qzXSzqK1RjSZFLXXcn2XXa-13-16.svg" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- =======================================================
+* Template Name: Moderna - v4.2.0
+* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+======================================================== -->
+</head>
+<body>
+        <!-- ======= Header ======= -->         
+        <header id="header" class="fixed-top d-flex align-items-center "> 
+            <div class="container d-flex justify-content-between align-items-center"> 
+                <div class="logo"> 
+                    <h1 class="text-light"><a href="index.html"><span>LiDAR-Camera Robust Benchmark</span></a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->                     
+                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->                     
+                </div>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li>
+                            <a class="active" href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="benchmark.html"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="benchmark.html#benchmark">Benchmark</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="documentation.html"><span>Documentation</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="documentation.html#data_toolkits">Data Toolkits</a>
+                                </li>
+                                <li>
+                                    <a href="documentation.html#data_instructions">Data Instructions</a>
+                                </li>
+                                <li>
+                                    <a href="documentation.html#data_examples">Data Examples</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="download.html"><span>Download</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="download.html#instructions">Instructions</a>
+                                </li>
+                                <li>
+                                    <a href="download.html#nus">NuScenes-R</a>
+                                </li>
+                                <li>
+                                    <a href="download.html#waymo">Waymo-R</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--                        <li class="dropdown">-->
+                        <!--                            <a href="challenges.html"><span>Challenges</span> <i class="bi bi-chevron-down"></i></a> -->
+                        <!--                            <ul> -->
+                        <!--                                <li>-->
+                        <!--                                    <a href="challenges.html#2d_detection">2021</a>-->
+                        <!--                                </li>                                 -->
+                        <!--                            </ul>                             -->
+                        <!--                        </li>                         -->
+                        <li class="dropdown">
+                            <a href="about.html"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="about.html#team">Team</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->                 
+            </div>             
+        </header>
+        <!-- End Header -->         
+        <main id="main"> 
+            <!-- ======= Our Services Section ======= -->             
+            <!-- End Our Services Section -->             
+            <!-- ======= Services Section ======= -->             
+            <section class="features"> 
+                <div class="container">
+                    <div class="row aos-init aos-animate" data-aos="fade-up">
+                        <div class="col-md-7 order-2 order-md-1 pt-3"></div>
+                    </div>
+                    <span class="anchor" id="terms_of_use"></span>
+                    <h3><b>Benchmarks</b></h3>
+                    <p>Benchmarking the robustness of state-of-the-art methods in all seven scenarios of the nuScenes-R and Waymo-R.</p>
+                    <table cellspacing="0" border="0">
+    <colgroup width="193"></colgroup>
+    <colgroup span="13" width="80"></colgroup>
+    <tr>
+        <td rowspan=2 height="40" align="center" valign=middle bgcolor="#FDEADA"><font face="Arial Unicode MS" color="#000000">Method</font></td>
+        <td rowspan=2 align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">Modality</font></td>
+        <td colspan=3 align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">Performance</font></td>
+        <td colspan=3 align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">LiDAR</font></td>
+        <td colspan=4 align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Camera</font></td>
+    </tr>
+    <tr>
+        <td align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">P_c</font></td>
+        <td align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">mP_R</font></td>
+        <td align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">R</font></td>
+        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Stuck</font></td>
+        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">FOV</font></td>
+        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Object</font></td>
+        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Stuck</font></td>
+        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Missing</font></td>
+        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Occlusion</font></td>
+        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Calib</font></td>
+        </tr>
+
+     <tr style="background-color:#dddddd">
+         <td colspan=12 height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">nuScenes-R (mAP / NDS)</font></td>
+     </tr>
+    <tr style="background-color:#ffffff">
+        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">CenterPoint</font></td>
+        <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">L</font></td>
+        <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.8/65.0</font></td>
+        <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.4/46.3</font></td>
+        <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.41/0.71</font></td>
+        <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.1/47.5</font></td>
+        <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">15.6/43.0</font></td>
+        <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.4/48.5</font></td>
+        <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+        <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+        <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+        <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+    </tr>
+    <tr>
+        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">DETR3D</font></td>
+        <td align="center" valign=middle sdval="68.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">C</font></td>
+        <td align="center" valign=middle sdval="80.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.9/43.4</font></td>
+        <td align="center" valign=middle sdval="62.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.6/31.5</font></td>
+        <td align="center" valign=middle sdval="47.04" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.50/0.73</font></td>
+        <td align="center" valign=middle sdval="17.63" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+        <td align="center" valign=middle sdval="19.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+        <td align="center" valign=middle sdval="15.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+        <td align="center" valign=middle sdval="10.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.3/32.3</font></td>
+        <td align="center" valign=middle sdval="46.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.5/29.9</font></td>
+        <td align="center" valign=middle sdval="58.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.3/29.0</font></td>
+        <td align="center" valign=middle sdval="40.32" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.2/35.0</font></td>
+    </tr>
+    <tr style="background-color:#ffffff">
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">PointAugmenting</font></td>
+                            <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">LC</font></td>
+                            <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">46.9/55.6</font></td>
+                            <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.7/48.3</font></td>
+                            <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.72/0.87</font></td>
+                            <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.3/43.5</font></td>
+                            <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.3/37.7</font></td>
+                            <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.3/39.4</font></td>
+                            <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">42.1/52.8</font></td>
+                            <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">37.0/49.8</font></td>
+                            <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">40.7/52.2</font></td>
+                            <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">43.6/53.8</font></td>
+                        </tr>
+    <tr style="background-color:#ffffff">
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">MVX-Net</font></td>
+                            <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">LC</font></td>
+                            <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.0/66.1</font></td>
+                            <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">38.4/53.6</font></td>
+                            <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.63/0.81</font></td>
+                            <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.2/51.4</font></td>
+                            <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.6/43.1</font></td>
+                            <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.0/51.1</font></td>
+                            <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.3/58.8</font></td>
+                            <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">32.7/50.6</font></td>
+                            <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">45.5/57.6</font></td>
+                            <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.8/59.9</font></td>
+                        </tr>
+     <tr style="background-color:#ffffff">
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">TransFusion</font></td>
+                            <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">LC</font></td>
+                            <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.9/70.9</font></td>
+                            <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.8/63.1</font></td>
+                            <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.79/0.89</font></td>
+                            <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.4/52.3</font></td>
+                            <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">20.3/45.8</font></td>
+                            <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.6/53.6</font></td>
+                            <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.9/70.2</font></td>
+                            <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">64.9/69.7</font></td>
+                            <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.5/70.0</font></td>
+                            <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.5/70.7</font></td>
+                        </tr>
+
+    <tr style="background-color:#dddddd">
+                            <td colspan=12 height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Waymo-R(L2 mAP / L2 mAPH)</font></td>
+                        </tr>
+                        <tr style="background-color:#ffffff">
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">CenterPoint</font></td>
+                            <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">L</font></td>
+                            <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.0/63.4</font></td>
+                            <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.6/29.4</font></td>
+                            <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.46/0.46</font></td>
+                            <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.5/28.3</font></td>
+                            <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.3/29.1</font></td>
+                            <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">32.1/30.9</font></td>
+                            <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+                            <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+                            <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+                            <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+                        </tr>
+                        <tr>
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">DETR3D</font></td>
+                            <td align="center" valign=middle sdval="68.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">C</font></td>
+                            <td align="center" valign=middle sdval="80.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.2/15.7</font></td>
+                            <td align="center" valign=middle sdval="62.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10.1/9.8</font></td>
+                            <td align="center" valign=middle sdval="47.04" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.62/0.62</font></td>
+                            <td align="center" valign=middle sdval="17.63" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+                            <td align="center" valign=middle sdval="19.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+                            <td align="center" valign=middle sdval="15.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">-</font></td>
+                            <td align="center" valign=middle sdval="10.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.0/12.6</font></td>
+                            <td align="center" valign=middle sdval="46.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">8.4/8.2</font></td>
+                            <td align="center" valign=middle sdval="58.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10.9/10.5</font></td>
+                            <td align="center" valign=middle sdval="40.32" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">8.0/7.8</font></td>
+                        </tr>
+                        <tr style="background-color:#ffffff">
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">PointAugmenting</font></td>
+                            <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">LC</font></td>
+                            <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.5/50.7</font></td>
+                            <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">39.6/38.3</font></td>
+                            <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.75/0.76</font></td>
+                            <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.7/23.9</font></td>
+                            <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.3/23.4</font></td>
+                            <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.2/25.3</font></td>
+                            <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.7/50.0</font></td>
+                            <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.4/48.6</font></td>
+                            <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.3/48.6</font></td>
+                            <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">49.8/48.1</font></td>
+                        </tr>
+                        <tr style="background-color:#ffffff">
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">MVX-Net</font></td>
+                            <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">LC</font></td>
+                            <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">59.7/54.1</font></td>
+                            <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">44.3/40.1</font></td>
+                            <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.74/0.74</font></td>
+                            <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.5/24.9</font></td>
+                            <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.8/25.6</font></td>
+                            <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.7/26.0</font></td>
+                            <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.2/52.7</font></td>
+                            <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.9/50.5</font></td>
+                            <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.4/51.1</font></td>
+                            <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.9/49.6</font></td>
+                        </tr>
+                        <tr style="background-color:#ffffff">
+                            <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">TransFusion</font></td>
+                            <td align="center" valign=middle sdval="52.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">LC</font></td>
+                            <td align="center" valign=middle sdval="74.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.7/64.1</font></td>
+                            <td align="center" valign=middle sdval="40.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.2/49.1</font></td>
+                            <td align="center" valign=middle sdval="16.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.77/0.77</font></td>
+                            <td align="center" valign=middle sdval="4.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.2/29.0</font></td>
+                            <td align="center" valign=middle sdval="6.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.2/29.0</font></td>
+                            <td align="center" valign=middle sdval="2.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">32.7/31.3</font></td>
+                            <td align="center" valign=middle sdval="0.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.5/63.9</font></td>
+                            <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.1/63.5</font></td>
+                            <td align="center" valign=middle sdval="46.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.2/63.6</font></td>
+                            <td align="center" valign=middle sdval="20.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.3/63.7</font></td>
+                        </tr>
+
+</table>
+<!--                    <div class="col-md-7 order-2 order-md-1 pt-5"></div>-->
+<!--                    <p>Results of detection models on the testing split.</p>-->
+<!--                    <table cellspacing="0" border="0">-->
+<!--    <colgroup width="193"></colgroup>-->
+<!--    <colgroup span="13" width="80"></colgroup>-->
+<!--    <tr>-->
+<!--        <td rowspan=2 height="40" align="center" valign=middle bgcolor="#FDEADA"><font face="Arial Unicode MS" color="#000000">Method</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">Vehicle</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Pedestrian</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Cyclist</font></td>-->
+<!--        <td rowspan=2 align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">mAP</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">PointRCNN</font></td>-->
+<!--        <td align="center" valign=middle sdval="52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="74.44" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">74.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="40.72" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">40.72</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.14" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.14</font></td>-->
+<!--        <td align="center" valign=middle sdval="8.73" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">8.73</font></td>-->
+<!--        <td align="center" valign=middle sdval="12.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">12.20</font></td>-->
+<!--        <td align="center" valign=middle sdval="6.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">6.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="2.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">2.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="46.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">46.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.39</font></td>-->
+<!--        <td align="center" valign=middle sdval="11.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">11.45</font></td>-->
+<!--        <td align="center" valign=middle sdval="31.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">31.58</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">PointPillars</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.51" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.51</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.55" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.55</font></td>-->
+<!--        <td align="center" valign=middle sdval="45.72" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">45.72</font></td>-->
+<!--        <td align="center" valign=middle sdval="17.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.28</font></td>-->
+<!--        <td align="center" valign=middle sdval="20.21" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">20.21</font></td>-->
+<!--        <td align="center" valign=middle sdval="15.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">15.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="11.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">11.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="49.63" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">49.63</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="42.43" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">42.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.73" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.73</font></td>-->
+<!--        <td align="center" valign=middle sdval="45.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">45.47</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">SECOND</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.71" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.71</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="43.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">43.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.09</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.63" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.63</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.19" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="59.92" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">59.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.54" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.54</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.34</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.9" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.90</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">PV-RCNN</font></td>-->
+<!--        <td align="center" valign=middle sdval="76.98" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">76.98</font></td>-->
+<!--        <td align="center" valign=middle sdval="89.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">89.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.35" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.35</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.28</font></td>-->
+<!--        <td align="center" valign=middle sdval="12.08" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">12.08</font></td>-->
+<!--        <td align="center" valign=middle sdval="61.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.64" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.64</font></td>-->
+<!--        <td align="center" valign=middle sdval="37.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">37.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.85" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.85</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">CenterPoints</font></td>-->
+<!--        <td align="center" valign=middle sdval="66.35" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.35</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.65" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.65</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.74</font></td>-->
+<!--        <td align="center" valign=middle sdval="41.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">41.57</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="45.41" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">45.41</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.53" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.53</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.57</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.85" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.85</font></td>-->
+<!--        <td align="center" valign=middle sdval="44.77" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">44.77</font></td>-->
+<!--        <td align="center" valign=middle sdval="61.24" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.24</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">PointPainting</font></td>-->
+<!--        <td align="center" valign=middle sdval="66.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.70</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="40.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">40.74</font></td>-->
+<!--        <td align="center" valign=middle sdval="47.62" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">47.62</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.95" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.95</font></td>-->
+<!--        <td align="center" valign=middle sdval="39.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">39.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.34</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.27" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.27</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="61.53" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.53</font></td>-->
+<!--        <td align="center" valign=middle sdval="43.9" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">43.90</font></td>-->
+<!--        <td align="center" valign=middle sdval="59.78" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">59.78</font></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--                    <div class="col-md-7 order-2 order-md-1 pt-5"></div>-->
+<!--                    <p>Results of self-supervised learning methods on the validation split.</p>-->
+<!--                    <table cellspacing="0" border="0">-->
+<!--    <colgroup width="193"></colgroup>-->
+<!--    <colgroup span="13" width="80"></colgroup>-->
+<!--    <tr>-->
+<!--        <td rowspan=2 height="40" align="center" valign=middle bgcolor="#FDEADA"><font face="Arial Unicode MS" color="#000000">Method</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">Vehicle</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Pedestrian</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Cyclist</font></td>-->
+<!--        <td rowspan=2 align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">mAP</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">baseline (SECOND)</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.19" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">71.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.04" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">84.04</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.02" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">63.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="47.25" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">47.25</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.44" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">26.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.33" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">29.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.05" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">24.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="18.05" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">18.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.04" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">58.04</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.96" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">69.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.43" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">52.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.61" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">34.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.89" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">51.89</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Small</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BYOL</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="81.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">81.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.21" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.21</font></td>-->
+<!--        <td align="center" valign=middle sdval="44.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">44.17</font></td>-->
+<!--        <td align="center" valign=middle sdval="19.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">19.50</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.16" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.16</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.68" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.68</font></td>-->
+<!--        <td align="center" valign=middle sdval="12.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">12.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="44.29" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">44.29</font></td>-->
+<!--        <td align="center" valign=middle sdval="28.18" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.18</font></td>-->
+<!--        <td align="center" valign=middle sdval="46.04" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">46.04</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">PointContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.07</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="64.9" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">64.90</font></td>-->
+<!--        <td align="center" valign=middle sdval="49.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">49.34</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.73" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.73</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.36" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.36</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.35" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.35</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="49.98" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">49.98</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">SwAV</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.71" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.71</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.68" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.68</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.91</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.1" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.10</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.77" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.77</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.77" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.77</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.36" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.36</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.99</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.96</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DeepCluster</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.19" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.25" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.25</font></td>-->
+<!--        <td align="center" valign=middle sdval="66.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.47</font></td>-->
+<!--        <td align="center" valign=middle sdval="24" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.36" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.36</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.73" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.73</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.79" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.79</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.99</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.17</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.06</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DepthContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.88" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.88</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.26" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.26</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="49.97" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">49.97</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.57</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.36" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.36</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.39</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.63" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.63</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.26" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.26</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.82</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.67" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.67</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.69</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Medium</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BYOL</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">63.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="45.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">45.74</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.91</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.55" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.55</font></td>-->
+<!--        <td align="center" valign=middle sdval="15.83" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">15.83</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.63" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.63</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.59" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.59</font></td>-->
+<!--        <td align="center" valign=middle sdval="49.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">49.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.53" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.53</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.82</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">PointContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.39</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="47.73" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">47.73</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="32.53" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">32.53</font></td>-->
+<!--        <td align="center" valign=middle sdval="23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.68" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.68</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.88" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.88</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.41" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.41</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.57</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.99</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">SwAV</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.51" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.51</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.39</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.08" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.08</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.08" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.08</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.94</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.19" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="17.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.85" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.85</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.87" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.87</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.38" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.38</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.78" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.78</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.48</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DeepCluster</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.62" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.62</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.99</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.55" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.55</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.77" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.77</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.25" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.25</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.08" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.08</font></td>-->
+<!--        <td align="center" valign=middle sdval="17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.57</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.86</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DepthContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.92" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.38" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.38</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.09</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="15.88" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">15.88</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.51" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.51</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="51" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.41" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.41</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.81</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Large</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BYOL</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.32" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.32</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.59" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.59</font></td>-->
+<!--        <td align="center" valign=middle sdval="64.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">64.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.27" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.27</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="17.04" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.04</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.56" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.56</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.18" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.18</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.74</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.32" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.32</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.63" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.63</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">PointContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.87" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.87</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.85" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.85</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.65" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.65</font></td>-->
+<!--        <td align="center" valign=middle sdval="28.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.03</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.07</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.91</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.44" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.88" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.88</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.12" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.12</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.77" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.77</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.78" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.78</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.59" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.59</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">SwAV</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.09</font></td>-->
+<!--        <td align="center" valign=middle sdval="66.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.50</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.84</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="17.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.84</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.79" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.79</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.21" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.21</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.39</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.38" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.38</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DeepCluster</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="67.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">67.09</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.38" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.38</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.32" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.32</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.76" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.76</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.43" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="18.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">18.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.94</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.18" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.18</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.42" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.42</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.36" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.36</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.72" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.72</font></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--                    <div class="col-md-7 order-2 order-md-1 pt-5"></div>-->
+<!--                    <p>Results of self-supervised learning methods on the testing split.</p>-->
+<!--                    <table cellspacing="0" border="0">-->
+<!--    <colgroup width="193"></colgroup>-->
+<!--    <colgroup span="13" width="80"></colgroup>-->
+<!--    <tr>-->
+<!--        <td rowspan=2 height="40" align="center" valign=middle bgcolor="#FDEADA"><font face="Arial Unicode MS" color="#000000">Method</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">Vehicle</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Pedestrian</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Cyclist</font></td>-->
+<!--        <td rowspan=2 align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">mAP</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">baseline (SECOND)</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.71" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">69.71</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.96" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">86.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.22" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">60.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="43.02" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">43.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.09" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">26.09</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.52" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">30.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.63" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">24.63</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.19" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">14.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="59.92" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">59.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.54" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">70.54</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.89" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">54.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.34" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">34.34</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.9" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">51.9</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Small</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BYOL</font></td>-->
+<!--        <td align="center" valign=middle sdval="67.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">67.57</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.26" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.26</font></td>-->
+<!--        <td align="center" valign=middle sdval="41.59" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">41.59</font></td>-->
+<!--        <td align="center" valign=middle sdval="17.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="19.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">19.45</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.71" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.71</font></td>-->
+<!--        <td align="center" valign=middle sdval="10.43" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.36" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.36</font></td>-->
+<!--        <td align="center" valign=middle sdval="64.95" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">64.95</font></td>-->
+<!--        <td align="center" valign=middle sdval="47.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">47.47</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="46.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">46.05</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">PointContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.53" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.53</font></td>-->
+<!--        <td align="center" valign=middle sdval="87.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">87.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.37" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.37</font></td>-->
+<!--        <td align="center" valign=middle sdval="47.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">47.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.68" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.68</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="12.98" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">12.98</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.04" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.04</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.74</font></td>-->
+<!--        <td align="center" valign=middle sdval="31.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">31.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.75" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.75</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">SwAV</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.25" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.25</font></td>-->
+<!--        <td align="center" valign=middle sdval="87.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">87.20</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.38" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">63.38</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.32" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.32</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.50</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.67" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.67</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.9" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.90</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.91</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.39</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.68" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.68</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DeepCluster</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="87.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">87.09</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.09" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">63.09</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.78" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.78</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.56" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.56</font></td>-->
+<!--        <td align="center" valign=middle sdval="32.21" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">32.21</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.6" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.60</font></td>-->
+<!--        <td align="center" valign=middle sdval="13.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.3" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.30</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.82</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.31</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DepthContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="87.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">87.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="47.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">47.99</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.29" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.29</font></td>-->
+<!--        <td align="center" valign=middle sdval="11.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">11.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.17</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.47</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Medium</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BYOL</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.83" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.83</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.41" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.41</font></td>-->
+<!--        <td align="center" valign=middle sdval="46.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">46.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="32.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">32.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.6" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.60</font></td>-->
+<!--        <td align="center" valign=middle sdval="13.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.57" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.57</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.07</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.41" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.41</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">PointContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.71" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.71</font></td>-->
+<!--        <td align="center" valign=middle sdval="61.12" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.12</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.28</font></td>-->
+<!--        <td align="center" valign=middle sdval="13.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.91</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.27" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.27</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.76" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.76</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">SwAV</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.1" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.10</font></td>-->
+<!--        <td align="center" valign=middle sdval="87.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">87.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">63.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.1" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.10</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.88" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.88</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.19" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.17</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.84</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.42" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.42</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DeepCluster</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.12" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.12</font></td>-->
+<!--        <td align="center" valign=middle sdval="87.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">87.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.97" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.97</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.55" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.55</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.07</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="13.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.47</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.45</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.03</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.21" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.21</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DepthContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.65" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.65</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="61.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.74" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.74</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.82</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.14" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.14</font></td>-->
+<!--        <td align="center" valign=middle sdval="15.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">15.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.83" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.83</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.9" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.90</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.99</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.64" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.64</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Large</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BYOL</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="87.3" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">87.30</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">63.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.62" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.62</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.1" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.10</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.14" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.14</font></td>-->
+<!--        <td align="center" valign=middle sdval="13.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.47</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.45</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.82</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.65" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.65</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.1" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.10</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">PointContrast</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="83.92" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">83.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="67.29" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">67.29</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.97" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.97</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="31.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">31.45</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.17</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.70</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.37" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.37</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.26" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.26</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.99</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">SwAV</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.92" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.83" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.83</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.85" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.85</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.6" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.60</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.42" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.42</font></td>-->
+<!--        <td align="center" valign=middle sdval="28.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.03</font></td>-->
+<!--        <td align="center" valign=middle sdval="14.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">14.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.27" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.27</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.43" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.25" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.25</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.2766666666667" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.28</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">DeepCluster</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.85" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.85</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="62.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">62.91</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.54" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.54</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.54" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.54</font></td>-->
+<!--        <td align="center" valign=middle sdval="37.08" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">37.08</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.55" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.55</font></td>-->
+<!--        <td align="center" valign=middle sdval="13.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">13.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.42" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.42</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.6" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.60</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.47</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.29" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.29</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.27" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.27</font></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--                    <div class="col-md-7 order-2 order-md-1 pt-5"></div>-->
+<!--                    <p>Results of semi-supervised learning methods on the validation split.</p>-->
+<!--                    <table cellspacing="0" border="0">-->
+<!--    <colgroup width="193"></colgroup>-->
+<!--    <colgroup span="13" width="80"></colgroup>-->
+<!--    <tr>-->
+<!--        <td rowspan=2 height="40" align="center" valign=middle bgcolor="#FDEADA"><font face="Arial Unicode MS" color="#000000">Method</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">Vehicle</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Pedestrian</font></td>-->
+<!--        <td colspan=4 align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Cyclist</font></td>-->
+<!--        <td rowspan=2 align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">mAP</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#C6D9F1"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">overall</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">0-30m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">30-50m</font></td>-->
+<!--        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">50m-inf</font></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">baseline (SECOND)</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.19" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">71.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.04" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">84.04</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.02" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">63.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="47.25" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">47.25</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.44" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">26.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.33" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">29.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.05" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">24.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="18.05" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">18.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.04" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">58.04</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.96" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">69.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.43" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">52.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.61" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">34.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.89" sdnum="1033;"><font face="Arial Unicode MS" color="#000000">51.89</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Small</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Pseudo Label</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="64.97" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">64.97</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.50</font></td>-->
+<!--        <td align="center" valign=middle sdval="28.36" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.36</font></td>-->
+<!--        <td align="center" valign=middle sdval="22.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">22.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="18.51" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">18.51</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.37" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.37</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.95" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.95</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.34</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.42" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.42</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.22</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Noisy Student</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="67.72" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">67.72</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.41" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.41</font></td>-->
+<!--        <td align="center" valign=middle sdval="28.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.23" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.23</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.42" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.42</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.67" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.67</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.43" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="32.65" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">32.65</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.39</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Mean Teacher</font></td>-->
+<!--        <td align="center" valign=middle sdval="74.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">74.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.65" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.65</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.44" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.59" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.59</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.54" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.54</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.24" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.24</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="20.12" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">20.12</font></td>-->
+<!--        <td align="center" valign=middle sdval="61.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.51" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.51</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.24" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.24</font></td>-->
+<!--        <td align="center" valign=middle sdval="39.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">39.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.34</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">SESS</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="66.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="52.83" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">52.83</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="31.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">31.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.94</font></td>-->
+<!--        <td align="center" valign=middle sdval="19.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">19.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="59.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">59.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.03</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.68" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.68</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.39</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">3DIoUMatch</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.87" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.87</font></td>-->
+<!--        <td align="center" valign=middle sdval="25.55" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">25.55</font></td>-->
+<!--        <td align="center" valign=middle sdval="18.3" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">18.30</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.77" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.77</font></td>-->
+<!--        <td align="center" valign=middle sdval="68.02" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">68.02</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.91" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.91</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.81</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Medium</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Pseudo Label</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.03" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.03</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.96" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.96</font></td>-->
+<!--        <td align="center" valign=middle sdval="51.42" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">51.42</font></td>-->
+<!--        <td align="center" valign=middle sdval="24.56" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">24.56</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.28</font></td>-->
+<!--        <td align="center" valign=middle sdval="20.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">20.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="17" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">17.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.26" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.26</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.44" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.4" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.40</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Noisy Student</font></td>-->
+<!--        <td align="center" valign=middle sdval="75.53" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">75.53</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.78" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.78</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="31.56" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">31.56</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.24" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.24</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.21" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.21</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.73" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.73</font></td>-->
+<!--        <td align="center" valign=middle sdval="36.94" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">36.94</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.34</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Mean Teacher</font></td>-->
+<!--        <td align="center" valign=middle sdval="76.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">76.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.47</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.34</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.92" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="40.86" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">40.86</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.44" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="19.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">19.82</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.21" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">63.21</font></td>-->
+<!--        <td align="center" valign=middle sdval="74.89" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">74.89</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.77" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.77</font></td>-->
+<!--        <td align="center" valign=middle sdval="40.29" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">40.29</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.27" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.27</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">SESS</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="66.44" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">66.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.61" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.61</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.44" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.44</font></td>-->
+<!--        <td align="center" valign=middle sdval="38.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">38.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="28.1" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.10</font></td>-->
+<!--        <td align="center" valign=middle sdval="18.67" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">18.67</font></td>-->
+<!--        <td align="center" valign=middle sdval="61.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">61.82</font></td>-->
+<!--        <td align="center" valign=middle sdval="73.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">73.20</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.6" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.60</font></td>-->
+<!--        <td align="center" valign=middle sdval="38.73" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">38.73</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.79" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.79</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">3DIoUMatch</font></td>-->
+<!--        <td align="center" valign=middle sdval="75.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">75.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.46" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.46</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.22" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.22</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.14" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.14</font></td>-->
+<!--        <td align="center" valign=middle sdval="38.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">38.84</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.19" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="19.62" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">19.62</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.93" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.93</font></td>-->
+<!--        <td align="center" valign=middle sdval="69.08" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">69.08</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.16" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.16</font></td>-->
+<!--        <td align="center" valign=middle sdval="38.87" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">38.87</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.25" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.25</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan=14 height="20" align="center" valign=middle bgcolor="#DBEEF4"><b><font face="Arial Unicode MS" color="#000000">Large</font></b></td>-->
+<!--        </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Pseudo Label</font></td>-->
+<!--        <td align="center" valign=middle sdval="72.41" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">72.41</font></td>-->
+<!--        <td align="center" valign=middle sdval="84.06" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">84.06</font></td>-->
+<!--        <td align="center" valign=middle sdval="64.54" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">64.54</font></td>-->
+<!--        <td align="center" valign=middle sdval="50.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">50.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="23.62" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">23.62</font></td>-->
+<!--        <td align="center" valign=middle sdval="26.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">26.80</font></td>-->
+<!--        <td align="center" valign=middle sdval="20.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">20.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="16.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">16.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="53.25" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">53.25</font></td>-->
+<!--        <td align="center" valign=middle sdval="64.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">64.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="48.52" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">48.52</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.47" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.47</font></td>-->
+<!--        <td align="center" valign=middle sdval="49.76" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">49.76</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Noisy Student</font></td>-->
+<!--        <td align="center" valign=middle sdval="75.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">75.99</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.67" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.67</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.6" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.60</font></td>-->
+<!--        <td align="center" valign=middle sdval="33.31" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">33.31</font></td>-->
+<!--        <td align="center" valign=middle sdval="37.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">37.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="28.19" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">28.19</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.39" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.39</font></td>-->
+<!--        <td align="center" valign=middle sdval="59.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">59.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.01" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.01</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.13" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.13</font></td>-->
+<!--        <td align="center" valign=middle sdval="38.33" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">38.33</font></td>-->
+<!--        <td align="center" valign=middle sdval="56.37" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">56.37</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">Mean Teacher</font></td>-->
+<!--        <td align="center" valign=middle sdval="76.38" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">76.38</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.45</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.99</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.48" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.48</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.95" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.95</font></td>-->
+<!--        <td align="center" valign=middle sdval="41.76" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">41.76</font></td>-->
+<!--        <td align="center" valign=middle sdval="29.05" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">29.05</font></td>-->
+<!--        <td align="center" valign=middle sdval="18.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">18.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="65.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">65.50</font></td>-->
+<!--        <td align="center" valign=middle sdval="75.72" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">75.72</font></td>-->
+<!--        <td align="center" valign=middle sdval="60.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">60.07</font></td>-->
+<!--        <td align="center" valign=middle sdval="43.66" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">43.66</font></td>-->
+<!--        <td align="center" valign=middle sdval="59.28" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">59.28</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">SESS</font></td>-->
+<!--        <td align="center" valign=middle sdval="75.95" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">75.95</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.83" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.83</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.45" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.45</font></td>-->
+<!--        <td align="center" valign=middle sdval="55.76" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">55.76</font></td>-->
+<!--        <td align="center" valign=middle sdval="34.43" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">34.43</font></td>-->
+<!--        <td align="center" valign=middle sdval="40" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">40.00</font></td>-->
+<!--        <td align="center" valign=middle sdval="27.92" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">27.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="19.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">19.20</font></td>-->
+<!--        <td align="center" valign=middle sdval="63.58" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">63.58</font></td>-->
+<!--        <td align="center" valign=middle sdval="74.85" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">74.85</font></td>-->
+<!--        <td align="center" valign=middle sdval="58.88" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">58.88</font></td>-->
+<!--        <td align="center" valign=middle sdval="39.51" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">39.51</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.99" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.99</font></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td height="20" align="center" valign=middle><font face="Arial Unicode MS" color="#000000">3DIoUMatch</font></td>-->
+<!--        <td align="center" valign=middle sdval="75.81" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">75.81</font></td>-->
+<!--        <td align="center" valign=middle sdval="86.11" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">86.11</font></td>-->
+<!--        <td align="center" valign=middle sdval="71.82" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">71.82</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.84" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.84</font></td>-->
+<!--        <td align="center" valign=middle sdval="35.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">35.70</font></td>-->
+<!--        <td align="center" valign=middle sdval="40.68" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">40.68</font></td>-->
+<!--        <td align="center" valign=middle sdval="30.34" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">30.34</font></td>-->
+<!--        <td align="center" valign=middle sdval="21.15" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">21.15</font></td>-->
+<!--        <td align="center" valign=middle sdval="59.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">59.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="70.69" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">70.69</font></td>-->
+<!--        <td align="center" valign=middle sdval="54.92" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">54.92</font></td>-->
+<!--        <td align="center" valign=middle sdval="39.08" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">39.08</font></td>-->
+<!--        <td align="center" valign=middle sdval="57.07" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">57.07</font></td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+                    <div class="col-md-7 order-2 order-md-1 pt-5"></div>
+                </div>                 
+            </section>           
+        </main>
+        <!-- End #main -->         
+        <!-- ======= Footer ======= -->         
+        <footer id="footer" data-aos-easing="ease-in-out" data-aos-duration="500"> 
+            <div class="container"> 
+                <div class="copyright"> 
+                    &copy; Copyright 
+                    <strong><span>Alibaba</span></strong>. All Rights Reserved
+                </div>                 
+                <div class="credits"> 
+                    <!-- All the links in the footer should remain intact. -->                     
+                    <!-- You can delete the links only if you purchased the pro version. -->                     
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->                     
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->                     
+                    Designed by 
+                    <a href="https://bootstrapmade.com/">BootstrapMade</a> 
+                </div>                 
+            </div>             
+        </footer>
+        <!-- End Footer -->         
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+        <!-- Vendor JS Files -->         
+        <script src="assets/vendor/aos/aos.js"></script>         
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>         
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>         
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>         
+        <script src="assets/vendor/php-email-form/validate.js"></script>         
+        <script src="assets/vendor/purecounter/purecounter.js"></script>         
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>         
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>         
+        <!-- Template Main JS File -->         
+        <script src="assets/js/main.js"></script>         
+    </body>     
+</html>

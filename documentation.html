@@ -1,0 +1,286 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+        <title>LiDAR-Camera Robust Benchmark</title>
+        <meta content="" name="description"> 
+        <meta content="" name="keywords"> 
+        <!-- Favicons -->
+        <link href="https://img.alicdn.com/tfs/TB1f0qzXSzqK1RjSZFLXXcn2XXa-13-16.svg" rel="icon">
+        <link href="https://img.alicdn.com/tfs/TB1f0qzXSzqK1RjSZFLXXcn2XXa-13-16.svg" rel="apple-touch-icon">
+        <!-- Google Fonts -->         
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet"> 
+        <!-- Vendor CSS Files -->         
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet"> 
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet"> 
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> 
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> 
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> 
+        <!-- Template Main CSS File -->         
+        <link href="assets/css/style.css" rel="stylesheet"> 
+        <!-- =======================================================
+  * Template Name: Moderna - v4.2.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->         
+    </head>     
+    <body> 
+        <!-- ======= Header ======= -->         
+        <header id="header" class="fixed-top d-flex align-items-center"> 
+            <div class="container d-flex justify-content-between align-items-center"> 
+                <div class="logo"> 
+                    <h1 class="text-light"><a href="index.html"><span>LiDAR-Camera Robust Benchmark</span></a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->                     
+                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->                     
+                </div>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li>
+                            <a class="active" href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="benchmark.html"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="benchmark.html#benchmark">Benchmark</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="documentation.html"><span>Documentation</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="documentation.html#data_toolkits">Data Toolkits</a>
+                                </li>
+                                <li>
+                                    <a href="documentation.html#data_instructions">Data Instructions</a>
+                                </li>
+                                <li>
+                                    <a href="documentation.html#data_examples">Data Examples</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="download.html"><span>Download</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="download.html#instructions">Instructions</a>
+                                </li>
+                                <li>
+                                    <a href="download.html#nus">NuScenes-R</a>
+                                </li>
+                                <li>
+                                    <a href="download.html#waymo">Waymo-R</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--                        <li class="dropdown">-->
+                        <!--                            <a href="challenges.html"><span>Challenges</span> <i class="bi bi-chevron-down"></i></a> -->
+                        <!--                            <ul> -->
+                        <!--                                <li>-->
+                        <!--                                    <a href="challenges.html#2d_detection">2021</a>-->
+                        <!--                                </li>                                 -->
+                        <!--                            </ul>                             -->
+                        <!--                        </li>                         -->
+                        <li class="dropdown">
+                            <a href="about.html"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="about.html#team">Team</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->                 
+            </div>             
+        </header>
+        <!-- End Header -->         
+        <main id="main"> 
+            <!-- ======= Our Services Section ======= -->             
+            <!-- End Our Services Section -->             
+            <!-- ======= Services Section ======= -->             
+            <section class="features"> 
+                <div class="container">
+                    <div class="row aos-init aos-animate" data-aos="fade-up"> 
+</div>               
+                    <span class="anchor" id="data_toolkits"></span>
+                    <h3><b>Data Toolkits</b></h3>
+                    <p>To facilitate future research, we leverage two popular large-scale autonomous driving datasets, nuScenes and Waymo, which you need to download and organize first as step 1 in <a href="download.html#instructions">Instructions</a>.
+                        And then you can apply our toolkits in <a href=https://github.com/kcyu2014/lidar-camera-robust-benchmark>GitHub</a> to generate noisy datasets:
+                    <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><code><b>nuScenes-R</b>  python tools/create_noise_data_nuscenes.py nuscenes --root-path ./data/nuscenes --out-dir ./data/nuscenes --extra-tag nuscenes</code></pre>
+
+
+                    <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><code><b>noisy pkl:</b> dict(
+        'lidar': dict(...) # noisy infos of lidar
+        'camera': dict(...) # noisy infos of camera
+)
+<b>lidar:</b> dict(
+    'xxxx.bin': dict(...),
+    'xxxx.bin': dict(...)
+)
+dict(
+    'prev': 'xxxx.bin' or '' ,
+    'cam': dict('CAM_FRONT':'xxx.jpg', 'CAM_FRONT_RIGHT':'xxx.jpg', ...),
+    'mmdet': dict(),
+    'noise': dict(
+    	'drop_frames': dict(
+        	'10': dict('discrete': dict('stuck': True or False, 'replace': 'xxx.bin',
+                       'consecutive': dict('stuck': True or False, 'replace': 'xxx.bin',
+                  )
+            '20':
+            ...
+            '90':
+        ),
+    'object_failure': True/False
+    )
+)
+<b>camera:</b> dict(
+	'xxxx.jpg': dict(...),
+    'xxxx.jpg': dict(...)
+)
+dict(
+    'type': 'CAM_FRONT' or 'CAM_FRONT_RIGHT' or ... ,
+	'prev': 'xxxx.jpg' or '' ,
+    'lidar': dict('file_name': 'xxx.bin') ,
+    'noise': dict(
+    	'drop_frames': dict(
+        	'10': dict('discrete': dict('stuck': True or False, 'replace': 'xxx.jpg'
+                       'consecutive': dict('stuck': True or False, 'replace': 'xxx.jpg'
+                  )
+            '20':
+            ...
+            '90':
+        )
+        'extrinsics_noise': dict(
+            'sensor2ego_translation': xxx,
+        	'single_noise_sensor2ego_translation': xxx,
+            'all_noise_sensor2ego_translation': xxx,
+            ...
+        ),
+        'mask_noise': dict(
+            'mask_id': xxx,
+        )
+    )
+)</code></pre>
+
+                    <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><code><b>Waymo-R</b>  python tools/create_noise_data_waymo.py waymo --root-path  data/waymo --out-dir data/waymo --workers 128 --extra-tag waymo</code></pre>
+                    <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><code><b>noisy pkl:</b> Similar to the nuScenes-R
+</code></pre>
+
+                    </p>
+
+<!--                    <p><b>Privacy protection</b>: The driving scenes are collected in permitted areas. We comply with the local regulations and avoid releasing any localization information, including GPS and cartographic information. For privacy protection, we actively detect any object on each image that may contain personal information, such as human faces and license plates, with a high recall rate. Then, we blur those detected objects to ensure that no personal information is disclosed.</p>-->
+                    <div class="row aos-init aos-animate" data-aos="fade-up">
+                        <div class="col-md-7 order-2 order-md-1 pt-4">
+</div>                         
+                    </div>
+                    <span class="anchor" id="data_instructions"></span>
+                    <h3><b>Data Instructions</b></h3>
+                    When you download the noisy val pkl files in  <a href="download.html"><span>Download</span></a> or generate it using our toolkit above. You can evaluate your LiDAR-camera fusion methods on our benchmark as the detailed instructions in <a href=https://github.com/kcyu2014/lidar-camera-robust-benchmark>GitHub</a>.
+                    For example, using noise of lidar object failure:
+                    <div class="col-md-7 order-2 order-md-1 pt-3">
+                    </div>
+                    <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><code><b>LiDAR Object Failure:</b>
+class Randomdropforeground(object):
+    def __init__(self, noise_nuscenes_ann_file=''):
+        noise_data = mmcv.load(noise_nuscenes_ann_file, file_format='pkl')
+        self.noise_lidar_data = noise_data['lidar']
+
+    @staticmethod
+    def remove_points_in_boxes(points, boxes):
+        masks = box_np_ops.points_in_rbbox(points.coord.numpy(), boxes)
+        points = points[np.logical_not(masks.any(-1))]
+        return points
+
+    def __call__(self, input_dict):
+        gt_bboxes_3d = input_dict['gt_bboxes_3d']
+        gt_labels_3d = input_dict['gt_labels_3d']
+        pts_filename = input_dict['pts_filename']
+        noise_index = pts_filename.split('/')[-1]
+
+        points = input_dict['points']
+        if self.noise_lidar_data[noise_index]['noise']['object_failure']:
+            points = self.remove_points_in_boxes(points, gt_bboxes_3d.tensor.numpy())
+        input_dict['points'] = points
+
+        return input_dict
+
+    def __repr__(self):
+        repr_str = self.__class__.__name__
+        repr_str += ' fore_drop_rate={})'.format(self.drop_rate)
+        return repr_str
+</code></pre>
+
+                    <div class="col-md-7 order-2 order-md-1 pt-5"></div>
+                    <span class="anchor" id="data_examples"></span>
+                    <h3><b>Data Examples</b></h3>
+                    We show the collected real-world noisy data cases of autonomous driving as follows:
+                    <div class="col-md-7 order-2 order-md-1 pt-4">
+                    </div>
+                <h4>Limited LiDAR field-of-view (FOV). </h4>
+                    <div align="left"><img src="assets/img/fov.png" width="800"/></div>
+                    <div class="col-md-7 order-2 order-md-1 pt-3"></div>
+                <h4>LiDAR object failure. </h4>
+                    <div align="left"><img src="assets/img/object.png" width="800"/></div>
+                    <div class="col-md-7 order-2 order-md-1 pt-3"></div>
+                <h4>Camera lens occlusion. </h4>
+                    <div align="left"><img src="assets/img/mask.png" width="800"/></div>
+                    <div class="col-md-7 order-2 order-md-1 pt-3"></div>
+                <h4>Spatial misalignment.</h4>
+                    <div align="left"><img src="assets/img/space_misalign.png" width="800"/></div>
+                    <div class="col-md-7 order-2 order-md-1 pt-3"></div>
+                <h4>Temporal misalignment.</h4>
+                    <div align="left"><img src="assets/img/misalign.png" width="800"/></div>
+
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                </div>                 
+            </section>
+            <!-- End Services Section -->             
+            <!-- ======= Why Us Section ======= -->             
+            <!-- End Why Us Section -->             
+            <!-- ======= Service Details Section ======= -->             
+            <!-- End Service Details Section -->             
+            <!-- ======= Pricing Section ======= -->             
+            <!-- End Pricing Section -->             
+        </main>
+        <!-- End #main -->         
+        <!-- ======= Footer ======= -->         
+        <footer id="footer" data-aos-easing="ease-in-out" data-aos-duration="500"> 
+            <div class="container"> 
+                <div class="copyright"> 
+                    &copy; Copyright 
+                    <strong><span>Alibaba</span></strong>. All Rights Reserved
+                </div>                 
+                <div class="credits"> 
+                    <!-- All the links in the footer should remain intact. -->                     
+                    <!-- You can delete the links only if you purchased the pro version. -->                     
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->                     
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->                     
+                    Designed by 
+                    <a href="https://bootstrapmade.com/">BootstrapMade</a> 
+                </div>                 
+            </div>             
+        </footer>
+        <!-- End Footer -->         
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+        <!-- Vendor JS Files -->         
+        <script src="assets/vendor/aos/aos.js"></script>         
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>         
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>         
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>         
+        <script src="assets/vendor/php-email-form/validate.js"></script>         
+        <script src="assets/vendor/purecounter/purecounter.js"></script>         
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>         
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>         
+        <!-- Template Main JS File -->         
+        <script src="assets/js/main.js"></script>         
+    </body>     
+</html>
